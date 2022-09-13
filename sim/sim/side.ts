@@ -232,6 +232,7 @@ export class Side {
 	}
 
 	randomFoe() {
+		// console.debug(new Error().stack);
 		const actives = this.foes();
 		if (!actives.length) return null;
 		return this.battle.sample(actives);
